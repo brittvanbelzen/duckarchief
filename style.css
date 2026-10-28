@@ -1,0 +1,190 @@
+/* CSS reset, dit niet aanpassen! */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr
+  grid-template-rows auto auto auto auto
+}
+img {
+  max-width: 200%;
+  height: auto;
+}
+
+/* Hieronder mag je eigen CSS code */
+
+
+body {
+    background-color: #FFF4CC;
+    color: #332719;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+
+
+}
+
+p
+{
+    color: #4A4032;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+
+h1
+{
+color: #332719;
+font-size: 3rem;
+  text-align: center;
+
+}
+
+.menu-item {
+  background-color: #E8C76A;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #332719;
+}
+
+h2
+{
+color: #332719;
+font-size: 2rem;
+  text-align: center;
+
+}
+
+h3{
+    color: #332719;
+font-size: 1.5rem;
+  text-align: center;
+}
+
+
+img{
+    width: 300px;
+
+}
+
+/* unvisited link */
+a:link {
+  color:#332719;
+}
+
+/* visited link */
+a:visited {
+  color:#332719;
+}
+
+/* mouse over link */
+a:hover {
+  color: #A65E2E;
+}
+
+/* selected link */
+a:active {
+  color: #D99A35;
+}
+
+.mijnpersonages{
+    background-color: antiquewhite;
+    margin: 50px;
+    padding: 10px;
+    border: 3px #332719 solid;
+   
+}
+
+
+.title{
+ background-image: url("img/duckworld.avif");
+ background-size: cover;
+ padding: 30px;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-color: gray;
+ width: 100%;
+ margin: 0;
+
+height: 25vw;
+}
+
+.background2{
+    background-image: url("img/donald-duck-strips.jpeg");
+ background-size: auto;
+background-repeat: repeat-x;
+ background-position: center;
+ border: 3px solid #332719;
+ color: white;
+
+ height: 300px;
+ padding: 40px;
+ margin:0;
+}
+
+#donald-duck
+{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#katrien{
+    grid-row: 3/4;
+    grid-column: 2/2;
+
+}
+
+#kwik-kwek-kwak{
+  grid-row: 4/4;
+    grid-column: 2/2;
+}
+#dagobert
+{
+    grid-column: 1/2;
+    grid-row: 4/4;
+}
+
+#titel2{
+   /*Dit is de Flex methode om content in het midden uit te lijnen*/
+    display: flex;
+    grid-column: 1/3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.menu-item
+{    
+    flex-direction: row;
+}
+.background2
+{
+    color: white;
+}
+
+.background2 h2{
+    color: #332719;
+    background-color: #E8C76A;
+     width: 40%;
+      align-items: center;
+      margin: 20px auto;
+}
+
+.background2 p{
+    color: #332719;
+     width: 40%;
+    background-color: #E8C76A;
+     align-items: center;
+   justify-content: center;
+   margin: 20px auto;
+}
